@@ -1,3 +1,28 @@
+## Switter
+>Switter est une micro-application réalisée sur <a href="https://svelte.dev/" target="_blank">Svelte.js</a>. <br>Dans l'esprit de "twitter" elle permet à l'utilisateur d’envoyer de brefs messages.
+
+Ce projet contient  les fondamentaux de Svelte tels que :
+
+- création de formulaires
+
+- event listeners
+
+- one-way et two-way binding
+
+- création de components
+
+- communication entre components via props et custom events
+
+- reactivité
+
+- ajout conditionnel de classe CSS
+
+- loops
+
+- affichage conditionnel
+
+---
+
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
