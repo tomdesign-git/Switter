@@ -11,8 +11,8 @@
 	function saveMessage() {
 		const newMessage = {
 			id: Date.now(),
-			text: message,
-			author: author,
+			text: message || 'message vide 🥺',
+			author: author || 'anonymous',
 			date: new Date()
 		};
         console.log('newMessage', newMessage);
@@ -27,5 +27,9 @@
 <textarea cols="50" rows="6" bind:value={message} placeholder="Ton message..."/>
 <br>
 <span class="counter" class:counter-alert={nbCaracters > maxLength}>{nbCaracters}</span>
-<button on:click={saveMessage} disabled={disabled}>Passe ton message</button>
+<button class="range" on:click={saveMessage} disabled={disabled}>Passe ton message</button>
+<br>
+{#if disabled}
+	<span class="text-alert">C'est {maxLength} caractères max !</span>
+{/if}
 <div class="separator"></div>

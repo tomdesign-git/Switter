@@ -75,7 +75,6 @@ input[type="range"] {
 }
 
 button {
-	margin-left: 10rem;
 	cursor: pointer;
 	font-weight: 500;
 	max-width: 12rem;
@@ -114,6 +113,24 @@ button:hover {
 	background-color: #00619e;
 }
 
+.hide {
+	padding: .2rem .4rem;
+	font-size: .8rem;
+	color: #6bc6ff;
+	max-width: 10rem;
+	background-color: #fff;
+}
+
+.hide:hover {
+	color: #00619e;
+	border-color: #00619e;
+	background-color: #fff;
+}
+
+.range{
+	margin-left: 10rem;
+}
+
 .counter {
 	padding: .4rem .8rem .4rem;
 	font-weight: 500;
@@ -134,10 +151,20 @@ button:hover {
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.text-alert {
+	margin: 2rem 11rem 0 0;
+	padding:.2rem .6rem;
+	font-size: .9rem;
+	color: #fff;	
+	border-top-right-radius: .4rem;
+	border-bottom-right-radius: .4rem;
+	border-bottom-left-radius: .4rem;
+	background-color: #f58d47;
+}
+
 .separator {
 	margin:0 auto;
-	height:2rem;
-
+	height:.6rem;
 }
 
 .swits {
