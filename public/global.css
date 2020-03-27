@@ -75,10 +75,11 @@ input[type="range"] {
 }
 
 button {
+	margin-left: 10rem;
 	cursor: pointer;
 	font-weight: 500;
 	max-width: 12rem;
-	padding: .4rem .9rem .5rem;
+	padding: .4rem .9rem;
 	color: #fff;
 	background-color: #1da1f2;
 	outline: none;
@@ -87,12 +88,21 @@ button {
 }
 
 button:disabled {
-	color: #999;
+	color: #9bbbd1;
+	border-color: #f5f8fa;
+	background-color: #f5f8fa;
+}
+
+button:disabled:hover {
+	color: #9bbbd1;
+	border-color: #f5f8fa;
+	background-color: #f5f8fa;
 }
 
 button:not(:disabled):active {
-	border-color: #3192ce;
-	background-color: #3192ce;
+	color: #9bbbd1;
+	border-color: #f5f8fa;
+	background-color: #f5f8fa;
 }
 
 button:focus {
@@ -102,6 +112,26 @@ button:focus {
 button:hover {
 	border-color: #00619e;
 	background-color: #00619e;
+}
+
+.counter {
+	padding: .4rem .8rem .4rem;
+	font-weight: 500;
+	color: #1da1f2;
+	outline: none;
+	border-radius: 50px;
+	border: 2px solid #6bc6ff;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.counter-alert {
+	padding: .4rem .8rem .4rem;
+	font-weight: 500;
+	color: #f2721d;
+	outline: none;
+	border-radius: 50px;
+	border: 2px solid #f58d47;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .separator {
@@ -115,7 +145,7 @@ button:hover {
     margin: 0 auto;
     padding: .1rem .9rem 1em;
 	text-align: center;
-	border-radius: .6rem;
+	border-radius: .3rem;
 	background-color: #f5f8fa;
 }
 
@@ -123,14 +153,14 @@ button:hover {
 	padding:.6rem;
 	margin: 0 0 0.5em 0;
 	box-sizing: border-box;
-	border-radius: .6rem;
+	border-radius: .3rem;
 	background-color: #e3eff8;
 }
 
 .author {
 	color: #4a4a55;
 	font-weight: bold;
-	padding-bottom: .6rem;
+	padding-bottom: .4rem;
 }
 
 .author:before {
@@ -149,6 +179,6 @@ button:hover {
 
 .message {
 	padding:.6rem .6em .8rem;
-	border-radius: .3rem;
+	border-radius: .2rem;
 	background-color: #fff;
 }

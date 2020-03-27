@@ -3,8 +3,10 @@
     const dispatch = createEventDispatcher();
 
     let message = "";
-    let author ="";
-
+	let author ="";
+	let maxLength = 30;
+	$: nbCaracters = message.length;
+	$: disabled = message.length > maxLength ? true : false;
     
 	function saveMessage() {
 		const newMessage = {
@@ -24,5 +26,6 @@
 <br>
 <textarea cols="50" rows="6" bind:value={message} placeholder="Ton message..."/>
 <br>
-<button on:click={saveMessage}>Passe ton message</button>
+<span class="counter" class:counter-alert={nbCaracters > maxLength}>{nbCaracters}</span>
+<button on:click={saveMessage} disabled={disabled}>Passe ton message</button>
 <div class="separator"></div>
