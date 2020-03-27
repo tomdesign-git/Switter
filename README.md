@@ -1,4 +1,6 @@
+
 ## Switter
+<img src="https://repository-images.githubusercontent.com/250057556/78d45800-7053-11ea-98e2-b7e352b93958" width="100%">
 >Switter est une micro-application réalisée sur <a href="https://svelte.dev/" target="_blank">Svelte.js</a>. <br>Dans l'esprit de "twitter" elle permet à l'utilisateur d’envoyer de brefs messages.
 
 Ce projet contient  les fondamentaux de Svelte tels que :
